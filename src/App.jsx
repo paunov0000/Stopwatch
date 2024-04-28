@@ -36,6 +36,7 @@ function App() {
 
   const resetStopwatch = () => {
     clearInterval(intervalRef.current);
+    elapsedTimeRef.current = 0;
     setTime("00:00.00");
   };
 
