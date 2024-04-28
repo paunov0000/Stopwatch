@@ -9,9 +9,7 @@ function App() {
   const isPausedRef = useRef(false);
 
   const startStopwatch = () => {
-    if (intervalRef != null) {
-      resetStopwatch();
-    }
+    clearInterval(intervalRef.current);
 
     if (isPausedRef.current) {
       isPausedRef.current = false;
