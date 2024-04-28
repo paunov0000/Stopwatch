@@ -6,6 +6,7 @@ function App() {
 
   const intervalRef = useRef();
   const elapsedTimeRef = useRef(0);
+  const isPausedRef = useRef(false);
 
   const startStopwatch = () => {
     if (intervalRef != null) {
