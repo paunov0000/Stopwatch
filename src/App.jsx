@@ -32,6 +32,8 @@ function App() {
     setTime("00:00.00");
   };
 
+  const pauseStopwatch = () => {};
+
   return (
     <>
       <div className="flex flex-col gap-20">
@@ -41,18 +43,19 @@ function App() {
         <div className="flex justify-center gap-10 text-4xl">
           <button
             className="bg-green-500 hover:bg-green-700 text-white font-bold py-3 px-6 rounded"
-            onClick={start}
+            onClick={startStopwatch}
           >
             Start
           </button>
           <button
             className="bg-red-500 hover:bg-red-700 text-white font-bold py-3 px-6 rounded"
+            onClick={pauseStopwatch}
           >
             Stop
           </button>
           <button
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded"
-            onClick={reset}
+            onClick={resetStopwatch}
           >
             Reset
           </button>
