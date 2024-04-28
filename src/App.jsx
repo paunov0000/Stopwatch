@@ -7,12 +7,14 @@ function App() {
   const intervalRef = useRef();
   const elapsedTimeRef = useRef();
 
-  const start = () => {
+  const startStopwatch = () => {
+    if (intervalRef != null) {
+      resetStopwatch();
+    }
     let startTime = Date.now();
     intervalRef.current = setInterval(() => {
       let elapsedTime = Date.now() - startTime;
       elapsedTimeRef.current = elapsedTime;
-      
 
       let minutes = Math.floor((elapsedTime / 1000 / 60) % 60);
       let seconds = Math.floor((elapsedTime / 1000) % 60);
