@@ -5,7 +5,7 @@ function App() {
   const [time, setTime] = useState("00:00.00");
 
   const intervalRef = useRef();
-  const elapsedTimeRef = useRef();
+  const elapsedTimeRef = useRef(0);
 
   const startStopwatch = () => {
     if (intervalRef != null) {
