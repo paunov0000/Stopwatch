@@ -12,6 +12,10 @@ function App() {
     if (intervalRef != null) {
       resetStopwatch();
     }
+
+    if (isPausedRef.current) {
+      isPausedRef.current = false;
+    }
     let startTime = Date.now();
     intervalRef.current = setInterval(() => {
       let elapsedTime = Date.now() - startTime;
