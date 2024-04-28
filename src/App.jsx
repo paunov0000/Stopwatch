@@ -37,7 +37,11 @@ function App() {
     setTime("00:00.00");
   };
 
-  const pauseStopwatch = () => {};
+  const pauseStopwatch = () => {
+    isPausedRef.current = true;
+    clearInterval(intervalRef.current);
+    console.log(elapsedTimeRef.current);
+  };
 
   return (
     <>
