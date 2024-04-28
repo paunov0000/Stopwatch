@@ -25,8 +25,9 @@ function App() {
     });
   };
 
-  const reset = () => {
+  const resetStopwatch = () => {
     clearInterval(intervalRef.current);
+    setTime("00:00.00");
   };
 
   return (
