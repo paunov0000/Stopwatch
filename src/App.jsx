@@ -14,7 +14,11 @@ function App() {
     if (isPausedRef.current) {
       isPausedRef.current = false;
     }
+
     let startTime = Date.now();
+    if (elapsedTimeRef.current != 0) {
+      startTime -= elapsedTimeRef.current;
+    }
     intervalRef.current = setInterval(() => {
       let elapsedTime = Date.now() - startTime;
       elapsedTimeRef.current = elapsedTime;
