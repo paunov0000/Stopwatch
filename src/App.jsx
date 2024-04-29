@@ -56,19 +56,19 @@ function App() {
         </div>
         <div className="flex justify-center gap-10 text-4xl">
           <button
-            className="bg-green-500 hover:bg-green-700 text-white font-bold py-3 px-6 rounded"
+            className="transition ease-in-out duration-400 bg-transparent text-green-500 border-green-500 border-2 hover:bg-green-500 hover:text-neutral-100 hover:border-green-500 font-bold py-1 px-6 rounded"
             onClick={startStopwatch}
           >
             Start
           </button>
           <button
-            className="bg-red-500 hover:bg-red-700 text-white font-bold py-3 px-6 rounded"
+            className="transition ease-in-out duration-400 bg-transparent text-blue-500 border-blue-500 border-2 hover:bg-blue-500 hover:text-neutral-100 hover:border-blue-500 font-bold py-1 px-6 rounded"
             onClick={pauseStopwatch}
           >
-            Stop
+            Pause
           </button>
           <button
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded"
+            className="transition ease-in-out duration-400 bg-transparent text-red-500 border-red-500 border-2 hover:bg-red-500 hover:text-neutral-100 hover:border-red-500 font-bold py-1 px-6 rounded"
             onClick={resetStopwatch}
           >
             Reset
