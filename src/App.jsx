@@ -50,7 +50,9 @@ function App() {
     <>
       <div className="flex flex-col gap-20">
         <div>
-          <p className="text-9xl text-center">{time}</p>
+          <p className="bg-clip-text text-9xl text-center bg-gradient-to-r from-gradient1 via-gradient2 to-gradient3 text-transparent">
+            {time}
+          </p>
         </div>
         <div className="flex justify-center gap-10 text-4xl">
           <button
