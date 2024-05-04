@@ -1,4 +1,4 @@
-## Stopwatch
+# Stopwatch
 
 This project is a simple stopwatch application built with ReactJS and TailwindCSS.
 
